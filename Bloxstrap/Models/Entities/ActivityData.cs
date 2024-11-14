@@ -79,7 +79,7 @@ namespace Bloxstrap.Models.Entities
 
         public ICommand RejoinServerCommand => new RelayCommand(RejoinServer);
 
-        private SemaphoreSlim serverQuerySemaphore = new(1, 1);
+        private readonly SemaphoreSlim serverQuerySemaphore = new(1, 1);
 
         public string GetInviteDeeplink(bool launchData = true)
         {

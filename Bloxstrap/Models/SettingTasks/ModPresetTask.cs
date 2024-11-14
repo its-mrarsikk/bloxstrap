@@ -5,9 +5,9 @@ namespace Bloxstrap.Models.SettingTasks
 {
     public class ModPresetTask : BoolBaseTask
     {
-        private Dictionary<string, ModPresetFileData> _fileDataMap = new();
+        private readonly Dictionary<string, ModPresetFileData> _fileDataMap = new();
         
-        private Dictionary<string, string> _pathMap;
+        private readonly Dictionary<string, string> _pathMap;
 
         public ModPresetTask(string name, string path, string resource) : this(name, new() {{ path, resource }}) { }
 

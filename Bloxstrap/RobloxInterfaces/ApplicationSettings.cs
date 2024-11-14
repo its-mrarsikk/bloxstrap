@@ -7,13 +7,13 @@ namespace Bloxstrap.RobloxInterfaces
     // i'll likely refactor this at some point
     public class ApplicationSettings
     {
-        private string _applicationName;
-        private string _channelName;
+        private readonly string _applicationName;
+        private readonly string _channelName;
 
         private bool _initialised = false;
         private Dictionary<string, string>? _flags;
 
-        private SemaphoreSlim semaphoreSlim = new SemaphoreSlim(1, 1);
+        private readonly SemaphoreSlim semaphoreSlim = new(1, 1);
 
         private ApplicationSettings(string applicationName, string channelName)
         {
@@ -57,11 +57,8 @@ namespace Bloxstrap.RobloxInterfaces
 
                 response.EnsureSuccessStatusCode();
 
-                var clientSettings = JsonSerializer.Deserialize<ClientFlagSettings>(rawResponse);
-
-                if (clientSettings == null)
-                    throw new Exception("Deserialised client settings is null!");
-
+                var clientSettings = JsonSerializer.Deserialize<ClientFlagSettings>(rawResponse) ?? throw new Exception("Deserialised client settings is null!");
+                
                 if (clientSettings.ApplicationSettings == null)
                     throw new Exception("Deserialised application settings is null!");
 
@@ -86,10 +83,7 @@ namespace Bloxstrap.RobloxInterfaces
             try
             {
                 var converter = TypeDescriptor.GetConverter(typeof(T));
-                if (converter == null)
-                    return default;
-
-                return (T?)converter.ConvertFromString(value);
+                return converter == null ? default : (T?)converter.ConvertFromString(value);
             }
             catch (NotSupportedException) // boohoo
             {
@@ -103,7 +97,7 @@ namespace Bloxstrap.RobloxInterfaces
         }
 
         // _cache[applicationName][channelName]
-        private static Dictionary<string, Dictionary<string, ApplicationSettings>> _cache = new();
+        private static readonly Dictionary<string, Dictionary<string, ApplicationSettings>> _cache = new();
 
         public static ApplicationSettings PCDesktopClient => GetSettings("PCDesktopClient");
 

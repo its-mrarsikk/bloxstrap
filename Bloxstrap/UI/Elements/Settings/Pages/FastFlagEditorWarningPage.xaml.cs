@@ -8,7 +8,7 @@ namespace Bloxstrap.UI.Elements.Settings.Pages
     /// </summary>
     public partial class FastFlagEditorWarningPage
     {
-        private FastFlagEditorWarningViewModel _viewModel;
+        private readonly FastFlagEditorWarningViewModel _viewModel;
 
         public FastFlagEditorWarningPage()
         {

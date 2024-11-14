@@ -11,7 +11,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
 {
     internal class FastFlagEditorWarningViewModel : NotifyPropertyChangedViewModel
     {
-        private Page _page;
+        private readonly Page _page;
 
         private CancellationTokenSource? _cancellationTokenSource;
 

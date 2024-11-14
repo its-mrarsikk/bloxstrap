@@ -39,7 +39,7 @@ namespace Bloxstrap.UI.Elements.Installer
 
         private Type _currentPage = typeof(WelcomePage);
 
-        private List<Type> _pages = new() { typeof(WelcomePage), typeof(InstallPage), typeof(CompletionPage) };
+        private readonly List<Type> _pages = new() { typeof(WelcomePage), typeof(InstallPage), typeof(CompletionPage) };
 
         private DateTimeOffset _lastNavigation = DateTimeOffset.Now;
 
