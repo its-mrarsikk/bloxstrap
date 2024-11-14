@@ -125,6 +125,12 @@
         </controls:OptionControl>
 
         <controls:OptionControl 
+Header="{x:Static resources:Strings.Menu_FastFlags_Presets_HideGuisGroup_Title}" 
+Description="{Binding Source={x:Static resources:Strings.Menu_FastFlags_Presets_HideGuisGroup_Description}, Converter={StaticResource StringFormatConverter}, ConverterParameter='https://github.com/bloxstraplabs/bloxstrap/wiki/A-guide-to-FastFlags#gui-hiding|https://www.roblox.com/groups/32380007/Bloxstrap'}" >
+            <ui:TextBox Width="200" Padding="10,5,10,5" Text="{Binding GuiHideGroup, Mode=TwoWay}" PreviewTextInput="ValidateInt32" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
             x:Name="FontPaddingOption"
             Header="{x:Static resources:Strings.Menu_FastFlags_Presets_FontPadding_Title}" 
             Description="{Binding Source={x:Static resources:Strings.Menu_FastFlags_Presets_FontPadding_Description}, Converter={StaticResource StringFormatConverter}, ConverterParameter='https://github.com/bloxstraplabs/bloxstrap/wiki/A-guide-to-FastFlags#gui-hiding|https://www.roblox.com/groups/32380007/Bloxstrap'}">

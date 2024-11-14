@@ -629,7 +629,7 @@ Do NOT use this to import large "flag lists" made by other people that promise t
     <value>Framerate limit</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Toggled with [keyboard shortcuts]({0}). Only works if you're in the [Bloxstrap group]({1}).</value>
+    <value>Toggled with [keyboard shortcuts]({0}). Only works if you're in the group specified below.</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Enable ability to hide GUIs</value>
@@ -1267,5 +1267,11 @@ Please close any applications that may be using Roblox's files, and relaunch.</v
   <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>All Bloxstrap logs</value>
     <comment>Label that appears next to a checkbox</comment>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuisGroup.Description" xml:space="preserve">
+    <value>The group ID you need to be in to use GUI hiding.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
+    <value>GUI hiding group ID</value>
   </data>
 </root>

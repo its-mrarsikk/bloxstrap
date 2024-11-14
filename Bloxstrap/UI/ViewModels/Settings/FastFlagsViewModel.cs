@@ -10,8 +10,6 @@ namespace Bloxstrap.UI.ViewModels.Settings
     {
         private Dictionary<string, object>? _preResetFlags;
 
-        private const string UI_HIDE_GROUP = "32380007";
-
         public event EventHandler? RequestPageReloadEvent;
         
         public event EventHandler? OpenFlagEditorEvent;
@@ -102,10 +100,17 @@ namespace Bloxstrap.UI.ViewModels.Settings
             set => App.FastFlags.SetPreset("UI.FullscreenTitlebarDelay", value ? "3600000" : null);
         }
 
+        // this is not in itself a fast flag but is closely related to GUI hiding which is one, so i put it here
+        public string GuiHideGroup
+        {
+            get => App.Settings.Prop.GuiHideGroup;
+            set => App.Settings.Prop.GuiHideGroup = value;
+        }
+
         public bool GuiHidingEnabled
         {
-            get => App.FastFlags.GetPreset("UI.Hide") == UI_HIDE_GROUP;
-            set => App.FastFlags.SetPreset("UI.Hide", value ? UI_HIDE_GROUP : null);
+            get => App.FastFlags.GetPreset("UI.Hide") == GuiHideGroup;
+            set => App.FastFlags.SetPreset("UI.Hide", value ? GuiHideGroup : null);
         }
 
         public IReadOnlyDictionary<TextureQuality, string?> TextureQualities => FastFlagManager.TextureQualityLevels;
