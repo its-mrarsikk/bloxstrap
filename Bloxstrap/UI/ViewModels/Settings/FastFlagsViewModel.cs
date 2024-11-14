@@ -10,6 +10,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
     {
         private Dictionary<string, object>? _preResetFlags;
 
+        private const string UI_HIDE_GROUP = "32380007";
+
         public event EventHandler? RequestPageReloadEvent;
         
         public event EventHandler? OpenFlagEditorEvent;
@@ -52,39 +54,39 @@ namespace Bloxstrap.UI.ViewModels.Settings
             set => App.FastFlags.SetPreset("Rendering.DisableScaling", value ? "True" : null);
         }
 
-        //public IReadOnlyDictionary<InGameMenuVersion, Dictionary<string, string?>> IGMenuVersions => FastFlagManager.IGMenuVersions;
+        public IReadOnlyDictionary<InGameMenuVersion, Dictionary<string, string?>> IGMenuVersions => FastFlagManager.IGMenuVersions;
 
-        //public InGameMenuVersion SelectedIGMenuVersion
-        //{
-        //    get
-        //    {
-        //        // yeah this kinda sucks
-        //        foreach (var version in IGMenuVersions)
-        //        {
-        //            bool flagsMatch = true;
+        public InGameMenuVersion SelectedIGMenuVersion
+        {
+            get
+            {
+                // yeah this kinda sucks
+                foreach (var version in IGMenuVersions)
+                {
+                    bool flagsMatch = true;
 
-        //            foreach (var flag in version.Value)
-        //            {
-        //                foreach (var presetFlag in FastFlagManager.PresetFlags.Where(x => x.Key.StartsWith($"UI.Menu.Style.{flag.Key}")))
-        //                { 
-        //                    if (App.FastFlags.GetValue(presetFlag.Value) != flag.Value)
-        //                        flagsMatch = false;
-        //                }
-        //            }
+                    foreach (var flag in version.Value)
+                    {
+                        foreach (var presetFlag in FastFlagManager.PresetFlags.Where(x => x.Key.StartsWith($"UI.Menu.Style.{flag.Key}")))
+                        { 
+                            if (App.FastFlags.GetValue(presetFlag.Value) != flag.Value)
+                                flagsMatch = false;
+                        }
+                    }
 
-        //            if (flagsMatch)
-        //                return version.Key;
-        //        }
+                    if (flagsMatch)
+                        return version.Key;
+                }
 
-        //        return IGMenuVersions.First().Key;
-        //    }
+                return IGMenuVersions.First().Key;
+            }
 
-        //    set
-        //    {
-        //        foreach (var flag in IGMenuVersions[value])
-        //            App.FastFlags.SetPreset($"UI.Menu.Style.{flag.Key}", flag.Value);
-        //    }
-        //}
+            set
+            {
+                foreach (var flag in IGMenuVersions[value])
+                    App.FastFlags.SetPreset($"UI.Menu.Style.{flag.Key}", flag.Value);
+            }
+        }
 
         public IReadOnlyDictionary<LightingMode, string> LightingModes => FastFlagManager.LightingModes;
 
@@ -102,8 +104,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
 
         public bool GuiHidingEnabled
         {
-            get => App.FastFlags.GetPreset("UI.Hide") == "32380007";
-            set => App.FastFlags.SetPreset("UI.Hide", value ? "32380007" : null);
+            get => App.FastFlags.GetPreset("UI.Hide") == UI_HIDE_GROUP;
+            set => App.FastFlags.SetPreset("UI.Hide", value ? UI_HIDE_GROUP : null);
         }
 
         public IReadOnlyDictionary<TextureQuality, string?> TextureQualities => FastFlagManager.TextureQualityLevels;

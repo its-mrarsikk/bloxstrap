@@ -4,7 +4,7 @@
     {
         [EnumName(FromTranslation = "Common.Default")]
         Default,
-        V1,
+        // V1,
         V2,
         V4,
         V4Chrome
