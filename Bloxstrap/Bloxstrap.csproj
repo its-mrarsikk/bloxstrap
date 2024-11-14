@@ -62,10 +62,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\wpfui\src\Wpf.Ui\Wpf.Ui.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <AssemblyAttribute Include="Bloxstrap.Models.Attributes.BuildMetadataAttribute">
       <_Parameter1>$([System.DateTime]::UtcNow.ToString("s"))Z</_Parameter1>
       <_Parameter2>$(COMPUTERNAME)\$(USERNAME)</_Parameter2>
@@ -95,6 +91,10 @@
       <ProjectionMetadataWinmd Include="$(UserProfile)\.nuget\packages\microsoft.windows.sdk.win32metadata\55.0.45-preview\Windows.Win32.winmd" />
     </ItemGroup>
   </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\wpfui\src\Wpf.Ui\Wpf.Ui.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Resources\Strings.Designer.cs">
