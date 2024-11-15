@@ -112,6 +112,7 @@ namespace Bloxstrap
             if (InstallLocation.StartsWith("\\\\"))
                 return false;
 
+            // prevent from installing to temp
             if (InstallLocation.StartsWith(Path.GetTempPath(), StringComparison.InvariantCultureIgnoreCase)
                 || InstallLocation.Contains("\\Temp\\", StringComparison.InvariantCultureIgnoreCase))
                 return false;
@@ -121,10 +122,7 @@ namespace Bloxstrap
                 return false;
 
             // prevent from installing to an essential user profile folder (e.g. Documents, Downloads, Contacts idk)
-            if (String.Compare(Directory.GetParent(InstallLocation)?.FullName, Paths.UserProfile, StringComparison.InvariantCultureIgnoreCase) == 0)
-                return false;
-
-            return true;
+            return string.Compare(Directory.GetParent(InstallLocation)?.FullName, Paths.UserProfile, StringComparison.InvariantCultureIgnoreCase) != 0;
         }
 
         public bool CheckInstallLocation()
@@ -327,12 +325,9 @@ namespace Bloxstrap
             {
                 // this is definitely one of the workaround hacks of all time
 
-                string deleteCommand;
-
-                if (deleteFolder)
-                    deleteCommand = $"del /Q \"{Paths.Base}\\*\" && rmdir \"{Paths.Base}\"";
-                else
-                    deleteCommand = $"del /Q \"{Paths.Application}\"";
+                string deleteCommand = deleteFolder 
+                    ? $"del /Q \"{Paths.Base}\\*\" && rmdir \"{Paths.Base}\"" 
+                    : $"del /Q \"{Paths.Application}\"";
 
                 Process.Start(new ProcessStartInfo()
                 {
@@ -368,6 +363,7 @@ namespace Bloxstrap
             if (currentVer is not null && existingVer is not null && Utilities.CompareVersions(currentVer, existingVer) == VersionComparison.LessThan)
             {
                 MessageBoxResult result;
+#pragma warning disable IDE0045 // helps clarity
                 if (Utilities.CompareVersions(existingVer, "1.0.0") == VersionComparison.GreaterThan)
                 { // we might be installing on top of a regular bloxstrap install
                     result = Frontend.ShowMessageBox(
@@ -384,6 +380,7 @@ namespace Bloxstrap
                         MessageBoxButton.YesNo
                     );
                 }
+#pragma warning restore IDE0045
 
                 if (result != MessageBoxResult.Yes)
                     return;

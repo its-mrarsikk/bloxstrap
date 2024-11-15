@@ -32,9 +32,13 @@ namespace Bloxstrap
 
         public static LaunchSettings LaunchSettings { get; private set; } = null!;
 
+#pragma warning disable CA2211
+
         public static BuildMetadataAttribute BuildMetadata = Assembly.GetExecutingAssembly().GetCustomAttribute<BuildMetadataAttribute>()!;
 
         public static string Version = Assembly.GetExecutingAssembly().GetName().Version!.ToString()[..^2];
+
+#pragma warning restore CA2211
 
         public static Bootstrapper? Bootstrapper { get; set; } = null!;
 
@@ -149,6 +153,11 @@ namespace Bloxstrap
 
         public static async void SendStat(string key, string value)
         {
+            Logger.WriteLine("App::SendLog", "Analytics are disabled in this fork.");
+            return;
+
+#pragma warning disable CS0162
+
             if (!Settings.Prop.EnableAnalytics)
                 return;
 
@@ -160,10 +169,18 @@ namespace Bloxstrap
             {
                 Logger.WriteException("App::SendStat", ex);
             }
+
+#pragma warning restore CS0162
+
         }
 
         public static async void SendLog()
         {
+            Logger.WriteLine("App::SendLog", "Analytics are disabled in this fork.");
+            return;
+
+#pragma warning disable CS0162
+
             if (!Settings.Prop.EnableAnalytics || !IsProductionBuild)
                 return;
 
@@ -178,6 +195,8 @@ namespace Bloxstrap
             {
                 Logger.WriteException("App::SendLog", ex);
             }
+
+#pragma warning restore CS0162
         }
 
         protected override void OnStartup(StartupEventArgs e)

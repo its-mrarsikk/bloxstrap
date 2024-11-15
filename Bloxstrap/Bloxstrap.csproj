@@ -68,7 +68,7 @@
       <_Parameter2>$(COMPUTERNAME)\$(USERNAME)</_Parameter2>
       <_Parameter3>$(CommitHash)</_Parameter3>
       <_Parameter4>$(CommitRef)</_Parameter4>
-	  <_Parameter5>$(BaseVersion)</_Parameter5>
+		<_Parameter5>$(BaseVersion)</_Parameter5>
 		<_Parameter6>$(IsReleaseBuild)</_Parameter6>
     </AssemblyAttribute>
   </ItemGroup>
