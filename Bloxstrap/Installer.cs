@@ -367,14 +367,28 @@ namespace Bloxstrap
 
             if (currentVer is not null && existingVer is not null && Utilities.CompareVersions(currentVer, existingVer) == VersionComparison.LessThan)
             {
-                var result = Frontend.ShowMessageBox(
-                    Strings.InstallChecker_VersionLessThanInstalled,
-                    MessageBoxImage.Question,
-                    MessageBoxButton.YesNo
-                );
+                MessageBoxResult result;
+                if (Utilities.CompareVersions(existingVer, "1.0.0") == VersionComparison.GreaterThan)
+                { // we might be installing on top of a regular bloxstrap install
+                    result = Frontend.ShowMessageBox(
+                        Strings.InstallChecker_MayBeReplacingRegular,
+                        MessageBoxImage.Question,
+                        MessageBoxButton.YesNo
+                    );
+                }
+                else
+                {
+                    result = Frontend.ShowMessageBox(
+                        Strings.InstallChecker_VersionLessThanInstalled,
+                        MessageBoxImage.Question,
+                        MessageBoxButton.YesNo
+                    );
+                }
 
                 if (result != MessageBoxResult.Yes)
                     return;
+
+                isAutoUpgrade = true;
             }
 
             // silently upgrade version if the command line flag is set or if we're launching from an auto update

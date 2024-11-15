@@ -1396,6 +1396,15 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на The installer has detected that you may be installing on top of a regular Bloxstrap install. If that is the case, click Yes to proceed..
+        /// </summary>
+        public static string InstallChecker_MayBeReplacingRegular {
+            get {
+                return ResourceManager.GetString("InstallChecker.MayBeReplacingRegular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Bloxstrap has been upgraded to v{0}.
         /// </summary>
         public static string InstallChecker_Updated {
@@ -1562,7 +1571,7 @@ namespace Bloxstrap.Resources {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Thank you for downloading Bloxstrap. 
         ///
-        ///The only official websites to download Bloxstrap from are {0} and {1}, so please verify that you got it from an official source.
+        ///The only official website to download this fork of Bloxstrap from is {0}, so please verify that you got it from an official source.
         ///
         ///This installation process will be quick and simple, and you will be able to configure any of Bloxstrap&apos;s settings after installation..
         /// </summary>

@@ -949,10 +949,10 @@ Selecting 'No' will ignore this warning and continue installation.</value>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
     <value>Thank you for downloading Bloxstrap. 
 
-The only official websites to download Bloxstrap from are {0} and {1}, so please verify that you got it from an official source.
+The only official website to download this fork of Bloxstrap from is {0}, so please verify that you got it from an official source.
 
 This installation process will be quick and simple, and you will be able to configure any of Bloxstrap's settings after installation.</value>
-    <comment>{0} and {1} are URLs</comment>
+    <comment>{0} is a URL</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>Please click 'Next' to continue.</value>
@@ -1273,6 +1273,9 @@ Please close any applications that may be using Roblox's files, and relaunch.</v
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI hiding group ID</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>The installer has detected that you may be installing on top of a regular Bloxstrap install. If that is the case, click Yes to proceed.</value>
   </data>
   <data name="Menu.About.BaseVersion" xml:space="preserve">
     <value>Base version {0}</value>

@@ -3,10 +3,9 @@
     public class WelcomeViewModel : NotifyPropertyChangedViewModel
     {
         // formatting is done here instead of in xaml, it's just a bit easier
-        public string MainText => String.Format(
+        public string MainText => string.Format(
             Strings.Installer_Welcome_MainText,
-            "[github.com/bloxstraplabs/bloxstrap](https://github.com/bloxstraplabs/bloxstrap)",
-            "[bloxstraplabs.com](https://bloxstraplabs.com)"
+            "[github.com/its-mrarsikk/bloxstrap](https://github.com/its-mrarsikk/bloxstrap)"
         );
 
         public string VersionNotice { get; private set; } = "";

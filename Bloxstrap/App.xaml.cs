@@ -228,7 +228,7 @@ namespace Bloxstrap
             // installation check begins here
             using var uninstallKey = Registry.CurrentUser.OpenSubKey(UninstallKey);
             string? installLocation = null;
-            bool fixInstallLocation = false;
+            bool fixInstallLocation = true;
             
             if (uninstallKey?.GetValue("InstallLocation") is string value)
             {
@@ -296,6 +296,7 @@ namespace Bloxstrap
             {
                 Paths.Initialize(installLocation);
 
+                
                 // ensure executable is in the install directory
                 if (Paths.Process != Paths.Application && !File.Exists(Paths.Application))
                     File.Copy(Paths.Process, Paths.Application);
@@ -319,8 +320,9 @@ namespace Bloxstrap
                 }
 
                 Locale.Set(Settings.Prop.Locale);
-
-                if (!LaunchSettings.BypassUpdateCheck)
+                
+                // this is a hacky solution for the fork not replacing regular bloxstrap when launched.
+                if (true || !LaunchSettings.BypassUpdateCheck)
                     Installer.HandleUpgrade();
 
                 LaunchHandler.ProcessLaunchArgs();
