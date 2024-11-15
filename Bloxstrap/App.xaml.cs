@@ -18,11 +18,11 @@ namespace Bloxstrap
 #else
         public const string ProjectName = "Bloxstrap";
 #endif
-        public const string ProjectOwner = "Bloxstrap";
-        public const string ProjectRepository = "bloxstraplabs/bloxstrap";
+        public const string ProjectOwner = "its-mrarsikk";
+        public const string ProjectRepository = "its-mrarsikk/bloxstrap";
         public const string ProjectDownloadLink = "https://bloxstraplabs.com";
-        public const string ProjectHelpLink = "https://github.com/bloxstraplabs/bloxstrap/wiki";
-        public const string ProjectSupportLink = "https://github.com/bloxstraplabs/bloxstrap/issues/new";
+        public const string ProjectHelpLink = "https://github.com/its-mrarsikk/bloxstrap/wiki";
+        public const string ProjectSupportLink = "https://github.com/its-mrarsikk/bloxstrap/issues/new";
 
         public const string RobloxPlayerAppName = "RobloxPlayerBeta";
         public const string RobloxStudioAppName = "RobloxStudioBeta";
@@ -38,9 +38,10 @@ namespace Bloxstrap
 
         public static Bootstrapper? Bootstrapper { get; set; } = null!;
 
-        public static bool IsActionBuild => !String.IsNullOrEmpty(BuildMetadata.CommitRef);
+        // manually passing release build or not into dotnet publish.
+        public static bool IsReleaseBuild => BuildMetadata.IsReleaseBuild;
 
-        public static bool IsProductionBuild => IsActionBuild && BuildMetadata.CommitRef.StartsWith("tag", StringComparison.Ordinal);
+        public static bool IsProductionBuild => IsReleaseBuild && BuildMetadata.CommitRef.StartsWith("tag", StringComparison.Ordinal);
 
         public static readonly MD5 MD5Provider = MD5.Create();
 
@@ -191,7 +192,7 @@ namespace Bloxstrap
 
             string userAgent = $"{ProjectName}/{Version}";
 
-            if (IsActionBuild)
+            if (IsReleaseBuild)
             {
                 Logger.WriteLine(LOG_IDENT, $"Compiled {BuildMetadata.Timestamp.ToFriendlyString()} from commit {BuildMetadata.CommitHash} ({BuildMetadata.CommitRef})");
 

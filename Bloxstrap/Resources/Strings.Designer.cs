@@ -1672,6 +1672,15 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Base version {0}.
+        /// </summary>
+        public static string Menu_About_BaseVersion {
+            get {
+                return ResourceManager.GetString("Menu.About.BaseVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Contributors.
         /// </summary>
         public static string Menu_About_Contributors {

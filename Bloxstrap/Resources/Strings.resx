@@ -1274,4 +1274,8 @@ Please close any applications that may be using Roblox's files, and relaunch.</v
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI hiding group ID</value>
   </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Base version {0}</value>
+    <comment>{0} is the version of Bloxstrap</comment>
+  </data>
 </root>

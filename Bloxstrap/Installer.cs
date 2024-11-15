@@ -441,9 +441,11 @@ namespace Bloxstrap
 
             // update migrations
 
-            if (existingVer is not null)
+            var existingBaseVer = App.BuildMetadata.BaseVersion;
+
+            if (existingBaseVer is not null)
             {
-                if (Utilities.CompareVersions(existingVer, "2.2.0") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.2.0") == VersionComparison.LessThan)
                 {
                     string path = Path.Combine(Paths.Integrations, "rbxfpsunlocker");
 
@@ -458,7 +460,7 @@ namespace Bloxstrap
                     }
                 }
 
-                if (Utilities.CompareVersions(existingVer, "2.3.0") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.3.0") == VersionComparison.LessThan)
                 {
                     string injectorLocation = Path.Combine(Paths.Modifications, "dxgi.dll");
                     string configLocation = Path.Combine(Paths.Modifications, "ReShade.ini");
@@ -471,13 +473,13 @@ namespace Bloxstrap
                 }
 
 
-                if (Utilities.CompareVersions(existingVer, "2.5.0") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.5.0") == VersionComparison.LessThan)
                 {
                     App.FastFlags.SetValue("DFFlagDisableDPIScale", null);
                     App.FastFlags.SetValue("DFFlagVariableDPIScale2", null);
                 }
 
-                if (Utilities.CompareVersions(existingVer, "2.5.1") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.5.1") == VersionComparison.LessThan)
                 {
                     App.FastFlags.SetValue("FIntDebugForceMSAASamples", null);
 
@@ -485,14 +487,14 @@ namespace Bloxstrap
                         App.FastFlags.SetPreset("UI.Menu.Style.ABTest", false);
                 }
 
-                if (Utilities.CompareVersions(existingVer, "2.5.3") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.5.3") == VersionComparison.LessThan)
                 {
                     string? val = App.FastFlags.GetPreset("UI.Menu.Style.EnableV4.1");
                     if (App.FastFlags.GetPreset("UI.Menu.Style.EnableV4.2") != val)
                         App.FastFlags.SetPreset("UI.Menu.Style.EnableV4.2", val);
                 }
 
-                if (Utilities.CompareVersions(existingVer, "2.6.0") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.6.0") == VersionComparison.LessThan)
                 {
                     if (App.Settings.Prop.UseDisableAppPatch)
                     {
@@ -516,7 +518,7 @@ namespace Bloxstrap
                         App.FastFlags.SetPreset("Rendering.Framerate", null);
                 }
 
-                if (Utilities.CompareVersions(existingVer, "2.8.0") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.8.0") == VersionComparison.LessThan)
                 {
                     if (isAutoUpgrade)
                     {
@@ -590,10 +592,11 @@ namespace Bloxstrap
                     }
                 }
 
-                if (Utilities.CompareVersions(existingVer, "2.8.1") == VersionComparison.LessThan)
+                if (Utilities.CompareVersions(existingBaseVer, "2.8.1") == VersionComparison.LessThan)
                 {
                     // wipe all escape menu flag presets
-                    App.FastFlags.SetValue("FIntNewInGameMenuPercentRollout3", null);
+                    // that's a good catch. removed it.
+                    /* App.FastFlags.SetValue("FIntNewInGameMenuPercentRollout3", null);
                     App.FastFlags.SetValue("FFlagEnableInGameMenuControls", null);
                     App.FastFlags.SetValue("FFlagEnableInGameMenuModernization", null);
                     App.FastFlags.SetValue("FFlagEnableInGameMenuChrome", null);
@@ -601,7 +604,7 @@ namespace Bloxstrap
                     App.FastFlags.SetValue("FFlagEnableMenuControlsABTest", null);
                     App.FastFlags.SetValue("FFlagEnableV3MenuABTest3", null);
                     App.FastFlags.SetValue("FFlagEnableInGameMenuChromeABTest3", null);
-                    App.FastFlags.SetValue("FFlagEnableInGameMenuChromeABTest4", null);
+                    App.FastFlags.SetValue("FFlagEnableInGameMenuChromeABTest4", null); */
                 }
 
 
@@ -616,7 +619,7 @@ namespace Bloxstrap
 
             if (isAutoUpgrade)
             {
-                Utilities.ShellExecute($"https://github.com/{App.ProjectRepository}/wiki/Release-notes-for-Bloxstrap-v{currentVer}");
+                Utilities.ShellExecute($"https://github.com/{App.ProjectRepository}/wiki/Release-notes-for-Bloxstrap-fork-v{currentVer}");
             }
             else
             {

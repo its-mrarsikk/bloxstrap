@@ -9,6 +9,8 @@ namespace Bloxstrap.UI.ViewModels.Installer
     {
         public string Version => string.Format(Strings.Menu_About_Version, App.Version);
 
+        public string BaseVersion => string.Format(Strings.Menu_About_BaseVersion, App.BuildMetadata.BaseVersion);
+
         public ICommand LaunchSettingsCommand => new RelayCommand(LaunchSettings);
 
         public ICommand LaunchRobloxCommand => new RelayCommand(LaunchRoblox);
