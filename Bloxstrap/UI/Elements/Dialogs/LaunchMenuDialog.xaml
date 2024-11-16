@@ -37,7 +37,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                
+
                 <Grid Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,32">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
@@ -48,14 +48,15 @@
                     <StackPanel Grid.Column="1" Margin="12,0,0,0" VerticalAlignment="Center">
                         <TextBlock Text="Bloxstrap" FontSize="24" />
                         <TextBlock Text="{Binding Version}" VerticalAlignment="Bottom" FontSize="12" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
-                        <TextBlock Text="its-mrarsikk's Fork" FontSize="12" Foreground="{DynamicResource TextFillColorTertiaryBrush}" VerticalAlignment="Bottom"></TextBlock>
                         <TextBlock Text="{Binding BaseVersion}" FontSize="12" VerticalAlignment="Bottom" Foreground="{DynamicResource TextFillColorTertiaryBrush}"/>
+                        <ui:Hyperlink Content="its-mrarsikk" FontSize="12" NavigateUri="https://github.com/its-mrarsikk" Icon="Empty" Padding="0"/>
                     </StackPanel>
+
                 </Grid>
 
                 <StackPanel Grid.Row="1" HorizontalAlignment="Center">
                     <ui:Hyperlink Icon="QuestionCircle48" Content="{x:Static resources:Strings.About_Title}" Margin="0,0,0,8" Command="{Binding LaunchAboutCommand, Mode=OneTime}" HorizontalAlignment="Center" />
-                    <ui:Hyperlink Icon="Heart48" Content="{x:Static resources:Strings.LaunchMenu_Donate}" NavigateUri="https://ko-fi.com/boxerpizza" HorizontalAlignment="Center" />
+                    <!-- <ui:Hyperlink Icon="Heart48" Content="{x:Static resources:Strings.LaunchMenu_Donate}" NavigateUri="https://ko-fi.com/boxerpizza" HorizontalAlignment="Center" /> -->
                 </StackPanel>
             </Grid>
 

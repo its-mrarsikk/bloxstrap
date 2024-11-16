@@ -20,7 +20,7 @@ namespace Bloxstrap
 #endif
         public const string ProjectOwner = "its-mrarsikk";
         public const string ProjectRepository = "its-mrarsikk/bloxstrap";
-        public const string ProjectDownloadLink = "https://bloxstraplabs.com";
+        public const string ProjectDownloadLink = "https://github.com/its-mrarsikk/bloxstrap/releases/latest";
         public const string ProjectHelpLink = "https://github.com/its-mrarsikk/bloxstrap/wiki";
         public const string ProjectSupportLink = "https://github.com/its-mrarsikk/bloxstrap/issues/new";
 
