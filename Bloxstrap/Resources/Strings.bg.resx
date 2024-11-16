@@ -630,9 +630,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Лимит на кадрите в секунда</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Превключва се с [клавишни комбинации]({0}). Работи само ако сте в [групата на Bloxstrap]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Активирайте способността за скриване на графичния интерфейс</value>
   </data>
@@ -1240,5 +1237,29 @@ Bloxstrap е инсталиран на „{1}“.</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID на групата за скриване на GUI</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Базова версия {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Инсталаторът е открил, че може да инсталирате върху обикновена инсталация на Bloxstrap. Ако случаят е такъв, щракнете върху Да, за да продължите.</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Всички дневници на Bloxstrap</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Конфигурация на Bloxstrap</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Експорт</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Zip архив</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Версия {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Превключва с [клавишни комбинации]({0}). Работи само ако сте в групата, посочена по -долу.</value>
   </data>
 </root>

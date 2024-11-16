@@ -631,9 +631,6 @@ NÃO USE o editor para importar grandes "flag lists" feitas por outras pessoas q
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Limite de taxa de quadros (FPS)</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Ligado com [atalhos de teclado]({0}). Só funciona se você estiver no [grupo Bloxstrap]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Habilitar a função de ocultar GUIs</value>
   </data>
@@ -1242,5 +1239,32 @@ Gostaria de habilitar o modo de teste?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID do grupo de ocultação de GUI</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Versão base {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>O instalador detectou que você pode estar instalando na parte superior de uma instalação regular de Bloxstrap. Se for esse o caso, clique em Sim para prosseguir.</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Versão {0}</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Arquivo de Zip</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
+    <value>Exportar dados de diagnóstico</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Configuração do Bloxstrap</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Todos os logs do Bloxstrap</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Alterado com [atalhos de teclado]({0}). Funciona apenas se você estiver no grupo especificado abaixo.</value>
   </data>
 </root>

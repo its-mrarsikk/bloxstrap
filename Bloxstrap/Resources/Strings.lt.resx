@@ -631,9 +631,6 @@ Nenaudokite jo importuoti didelių kitų žmonių sudarytų „gairelių sąraš
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Kadrų dažnio riba</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Perjungta su [spartiečiais klavišais]({0}). Veikia tik jei esate [„Bloxstrap“ grupėje]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Įjungti galimybę paslėpti grafinės sąsajas</value>
   </data>
@@ -1241,5 +1238,26 @@ Ar norėtumėte įjungti bandymo režimą?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI paslėpimo grupės ID</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>ZIP archyvas</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Eksportas</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Diegimo programa nustatė, kad galbūt diegiate ant įprastos Bloxstrap. Jei taip, spauskite Taip, kad tęstumėte.</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bloxstrap konfigūracija</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Pagrindinė versija {0}</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>{0} versija</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Perjungtas su [klaviatūros nuorodomis]({0}). Veikia tik tuo atveju, jei esate žemiau nurodytoje grupėje.</value>
   </data>
 </root>

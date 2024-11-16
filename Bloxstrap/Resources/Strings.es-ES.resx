@@ -229,7 +229,7 @@
     <value>Preestablecidos</value>
   </data>
   <data name="Common.Reset" xml:space="preserve">
-    <value>Restablecer </value>
+    <value>Restablecer</value>
     <comment>In the context of resetting something to a default value</comment>
   </data>
   <data name="Common.Value" xml:space="preserve">
@@ -630,9 +630,6 @@ NO los uses para importar grandes "listas de flags" creadas por otras personas q
   </data>
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Límite de velocidad de fotogramas</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Alternado con [atajos de teclado]({0}). Solo funciona si estás en el [grupo de Bloxstrap]({1}).</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Habilitar la capacidad de ocultar GUIs</value>
@@ -1240,5 +1237,32 @@ Mientras esté activado, se iniciará automáticamente Roblox después de cerrar
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID de grupo para ocultar GUI</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Archivo zip</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
+    <value>Exportar datos de diagnóstico</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Configuración de Bloxstrap</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Todos los registros de Bloxstrap</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>El instalador ha detectado que puede estar instalando encima de una instalación regular de Bloxstrap. Si ese es el caso, haga clic en Sí para continuar.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Versión base {0}</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Versión {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Alternado con [atajos de teclado]({0}). Solo funciona si estás en el grupo especificado a continuación.</value>
   </data>
 </root>

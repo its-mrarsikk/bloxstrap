@@ -631,9 +631,6 @@ NU folosiți acest editor pentru a importa „liste de flag-uri” făcute de al
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Limită de FPS</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Comută cu [comenzi rapide de tastatură]({0}). Funcționează numai dacă vă aflați în [grupul Bloxstrap]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Permite capacitatea de a ascunde GUI-uri</value>
   </data>
@@ -1241,5 +1238,23 @@ Doriți să activați modul de testare?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID grup de ascundere GUI</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Configurare Bloxstrap</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Programul de instalare a detectat că încercați să instalați peste o instalare obișnuită Bloxstrap. Dacă acesta este cazul, faceți clic pe Da pentru a continua.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Versiunea de bază {0}</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Arhiva Zip</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Versiunea {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Comutați cu [comenzi rapide de la tastatură]({0}). Funcționează numai dacă sunteți în grupul specificat mai jos.</value>
   </data>
 </root>

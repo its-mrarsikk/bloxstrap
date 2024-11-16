@@ -214,7 +214,7 @@
     <value>Khác</value>
   </data>
   <data name="Common.Name" xml:space="preserve">
-    <value>Tên </value>
+    <value>Tên</value>
   </data>
   <data name="Common.New" xml:space="preserve">
     <value>Mới</value>
@@ -630,9 +630,6 @@ Bạn có chắc chắn muốn tiếp tục không?</value>
   </data>
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Giới hạn tốc độ khung hình</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Bật/Tắt bằng [tổ hợp phím]({0}). Chỉ hoạt động nếu đang ở trong [Nhóm Bloxstrap]({1}).</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Bật tính năng ẩn giao diện người dùng</value>
@@ -1243,5 +1240,17 @@ Bạn có muốn bật chế độ thử nghiệm không?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID nhóm ẩn GUI</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Phiên bản {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Trình cài đặt đã phát hiện ra rằng bạn có thể đang cài đặt trên đầu cài đặt Bloxstrap thông thường. Nếu đó là trường hợp, nhấp vào Có để tiến hành.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Phiên bản cơ sở {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Được bật với [phím tắt bàn phím]({0}). Chỉ hoạt động nếu bạn ở trong nhóm được chỉ định dưới đây.</value>
   </data>
 </root>

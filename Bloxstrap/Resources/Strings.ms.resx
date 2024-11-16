@@ -628,9 +628,6 @@ JANGAN mengimport sebarang senarai "Fast Flags" yang dibuat oleh pengguna lain y
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Had kadar bingkai</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Diaktifkan menggunakan [pintasan papan kekunci]({0}). Fungsi ini hanya akan berfungsi jika anda berada dalam [kumpulan Bloxstrap] sahaja ({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Aktifkan keupayaan untuk menyembunyikan GUI</value>
   </data>
@@ -1233,5 +1230,26 @@ Adakah anda ingin mengaktifkan mod pengujian?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID kumpulan penyembunyian GUI</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Versi asas {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Pemasang telah mengesan bahawa anda mungkin memasang di atas pemasangan Bloxstrap biasa. Jika itu berlaku, klik Ya untuk meneruskan.</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Konfigurasi Bloxstrap</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Eksport</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
+    <value>Data diagnostik eksport</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Versi {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Bertukar dengan [pintasan papan kekunci]({0}). Hanya berfungsi jika anda berada dalam kumpulan yang dinyatakan di bawah.</value>
   </data>
 </root>

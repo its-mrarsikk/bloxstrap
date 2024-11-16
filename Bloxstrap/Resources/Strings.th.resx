@@ -629,9 +629,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>การจำกัด Framerate</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>สลับกับ[ปุ่มคีย์บอร์ด]({0}) จะสามารถใช้ได้ถ้าคุณอยู่ใน[กลุ่มของ Bloxstrap]({1})</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>เปิดใช้ความสามารถในการซ่อน GUIs</value>
   </data>
@@ -1233,5 +1230,14 @@ Bloxstrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID กลุ่มการซ่อน GUI</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>ตัวติดตั้งตรวจพบว่าคุณอาจติดตั้งที่ด้านบนของการติดตั้ง Bloxstrap ปกติ หากเป็นกรณีนี้ให้คลิกใช่เพื่อดำเนินการต่อ</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>เวอร์ชันพื้นฐาน {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>สลับกับ [แป้นพิมพ์ลัด]({0}) ใช้งานได้เฉพาะในกรณีที่คุณอยู่ในกลุ่มที่ระบุไว้ด้านล่าง</value>
   </data>
 </root>

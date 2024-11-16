@@ -630,9 +630,6 @@ Bunu, diğer insanlar tarafından yapılan ve performansı artırmayı vaat eden
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Kare hızı limiti (FPS)</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>[Klavye kısayolları]({0}) ile değiştirilir. Yalnızca [Bloxstrap grubu]({1}) içindeyseniz çalışır.</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>GUI'leri gizleme özelliğini etkinleştir</value>
   </data>
@@ -1238,5 +1235,20 @@ Test modu açmak ister misiniz?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI gizleme grup kimliği</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Yükleyici, normal bir Bloxstrap kurulumunun üstüne yüklediğinizi tespit etti. Bu durumda, devam etmek için evet'i tıklayın.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Temel sürüm {0}</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Sürüm {0}</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Zip arşivi</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>[Klavye kısayolları]({0}) ile değiştirildi. Yalnızca aşağıda belirtilen gruptaysanız çalışır.</value>
   </data>
 </root>

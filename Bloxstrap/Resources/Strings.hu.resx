@@ -629,9 +629,6 @@ Biztosan folytatja?</value>
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>FPS korlát</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>A [billentyűparancsok]({0}) segítségével kapcsolható. Csak akkor működik, ha a [Bloxstrap Roblox csoportban]({1}) vagy.</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>A GUI-k elrejtésének lehetővé tétele</value>
   </data>
@@ -1239,5 +1236,23 @@ Szeretné engedélyezni a teszt üzemmódot?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI elrejtési csoportazonosító</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Base verzió {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>A telepítő észlelte, hogy lehet, hogy telepít egy szokásos Bloxstrap telepítés tetejére. Ha ez a helyzet, kattintson az Igen gombra a folytatáshoz.</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Zip-archívum</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Verzió {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Váltva a [billentyűparancsok]({0}). Csak akkor működik, ha az alábbiakban megadott csoportban tartózkodik.</value>
   </data>
 </root>

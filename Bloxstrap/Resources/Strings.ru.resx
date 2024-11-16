@@ -631,9 +631,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Лимит кадров в секунду</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Переключается с помощью [сочетания клавиш]({0}). Работает только если вы находитесь в группе, указанной ниже.</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Активировать возможность скрывать элементы пользовательского интерфейса</value>
   </data>
@@ -1239,5 +1236,32 @@ Bloxstrap был установлен по адресу "{1}".</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID группы для скрытия элементов пользовательского интерфейса</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Все логи Bloxstrap</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Установщик обнаружил, что вы, возможно, пытаетесь установить поверх установки официального Bloxstrap. Если это так, нажмите «Да», чтобы продолжить.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Базовая версия {0}</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Конфигурация Bloxstrap</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
+    <value>Экспорт диагностических данных</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Zip архив</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Версия {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Можно переключать [горячими клавишами]({0}). Работает только если вы находитесь в группе, указанной ниже.</value>
   </data>
 </root>

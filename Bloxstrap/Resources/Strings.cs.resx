@@ -631,9 +631,6 @@ NEPOUŽÍVEJTE tohle aby jste importovali velké "Fast flags" listy udělané os
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Limit frekvence</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Přepíná se pomocí [klávesových zkratek]({0}). Funguje pouze, pokud jste ve [skupině Bloxstrap na Robloxu]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Povolit možnost skrýt GUI</value>
   </data>
@@ -1238,5 +1235,26 @@ Chcete zapnout testovací režim?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID skupiny pro skrývání GUI</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Archiv zip</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Vývozní</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Základní verze {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Instalační program zjistil, že instalujete na běžnou instalaci Bloxstrap. Pokud tomu tak je, klikněte na tlačítko ano.</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Konfigurace Bloxstrap</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Verze {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Přepínáno s [klávesovými zkratky]({0}). Funguje pouze tehdy, pokud jste ve skupině uvedené níže.</value>
   </data>
 </root>

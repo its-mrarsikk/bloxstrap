@@ -631,9 +631,6 @@ NON usare questo editor per importare lunghi ‘elenchi di flag’ creati da alt
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Limite di Framerate</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Attivato/Disattivato con [keyboard shortcuts]({0}). Funziona solo se fai parte del gruppo [Bloxstrap group]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Abilita la possibilità di nascondere le GUI</value>
   </data>
@@ -1242,5 +1239,26 @@ Vuoi abilitare la modalità di prova?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID del gruppo di nascondimento GUI</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Versione base {0}</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Versione {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Il programma di installazione ha rilevato che si sta installando sopra una normale installazione di Bloxstrap. In questo caso, fare clic su Sì per procedere.</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Archivio zip</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Esportare</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Configurazione Bloxstrap</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Attivato con [scorciatoie da tastiera]({0}). Funziona solo se sei nel gruppo specificato di seguito.</value>
   </data>
 </root>

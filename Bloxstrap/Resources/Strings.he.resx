@@ -630,9 +630,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>הגבלת קצב פריימים</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>מופעל עם [דרכי קיצור במקלדת]({0}). עובד רק אם אתם נמצאים ב[קבוצה של Bloxstrap]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>הפעל את היכולת להסתיר את ממשק המשתמש</value>
   </data>
@@ -1240,5 +1237,14 @@ Bloxstrap הותקן ב-"{1}".</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>מזהה קבוצה להסתרת GUI</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>המתקין גילה כי יתכן שתתקין על גבי התקנת Bloxstrap רגילה. אם זה המקרה, לחץ על כן כדי להמשיך.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>גרסת בסיס {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>מחולק עם [קיצורי מקשים]({0}). עובד רק אם אתה בקבוצה שצוינה להלן.</value>
   </data>
 </root>

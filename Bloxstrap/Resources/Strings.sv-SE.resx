@@ -628,9 +628,6 @@ Använd INTE detta för att importera stora "flagglistor" gjorda av andra person
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Bildfrekvensgräns</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Sätts igång med [tangentbordsgenvägar]({0}). Fungerar endast om du är i [Bloxstrap-gruppen]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Aktivera möjligheten att dölja GUIs</value>
   </data>
@@ -1238,5 +1235,29 @@ Vill du aktivera testläge?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI-döljande grupp-ID</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Basversion {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Installatören har upptäckt att du kanske installerar ovanpå en vanlig Bloxstrap -installation. Om så är fallet, klicka på Ja för att fortsätta.</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bloxstrap -konfiguration</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Alla Bloxstrap -loggar</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Exportera</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Ziparkiv</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
+    <value>Exportdiagnostisk data</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Toggled med [tangentbordsgenvägar]({0}). Fungerar bara om du är i den grupp som anges nedan.</value>
   </data>
 </root>

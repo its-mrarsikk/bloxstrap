@@ -637,9 +637,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>フレームレート上限</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>[ショートカットキー]({0})で切り替えることができます。[Bloxstrapグループ]({1})に参加している場合のみ有効です。</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>GUIを非表示にする機能を有効にする</value>
   </data>
@@ -1253,5 +1250,32 @@ Bloxstrapのインストール場所: {1}</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI 隠しグループID</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>インストーラーは、通常のBloxstrapインストールの上にインストールしている可能性があることを検出しました。その場合は、[はい]をクリックして続行します。</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>ベースバージョン{0}</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>zipアーカイブ</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>輸出</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
+    <value>診断データのエクスポート</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Ver. {0}</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bloxstrap構成</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>すべてのBloxstrapログ</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>[キーボードショートカット]({0})で切り替えました。以下に指定されているグループにいる場合にのみ機能します。</value>
   </data>
 </root>

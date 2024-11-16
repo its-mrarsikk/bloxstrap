@@ -630,9 +630,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>幀數（FPS）上限</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>用快捷鍵({0})開啟，此設定需加入[Bloxstrap group]({1})。</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>啟用隱藏介面功能</value>
   </data>
@@ -1237,5 +1234,14 @@ Bloxstrap 安裝在 "{1}"。</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI 隱藏群組 ID</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>基本版本{0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>安裝程序已檢測到您可能正在安裝常規的Bloxstrap安裝。如果是這種情況，請單擊“是”繼續。</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>用[鍵盤快捷鍵]({0})切換。僅當您在下面指定的組中工作時才有效。</value>
   </data>
 </root>

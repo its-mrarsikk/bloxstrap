@@ -631,9 +631,6 @@ Haluatko varmasti jatkaa?</value>
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Kuvataajuuden rajoitus</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Vaihda käyttämällä [näppäinyhdistelmiä]({0}). Toimii vain, jos olet [Bloxstrap Roblox-ryhmässä]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Antaa sinun piilottaa pelin GUI:t</value>
   </data>
@@ -1242,5 +1239,23 @@ piilotusta.</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI-piilotusryhmän tunnus</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Versio {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Asennusohjelma on havainnut, että saatat asentaa tavallisen Bloxstrap -asennuksen päälle. Jos näin on, napsauta kyllä ​​jatkaaksesi.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Perusversio {0}</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>ZIP -arkisto</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Viedä</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Kytketty [pikanäppäimet]({0}). Toimii vain, jos olet alla määritettyyn ryhmään.</value>
   </data>
 </root>

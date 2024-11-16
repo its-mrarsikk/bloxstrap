@@ -629,9 +629,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>حد معدل الإطارات (FPS)</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>يتم تفعيله باستخدام [اختصارات لوحة المفاتيح]({0}). يعمل فقط إذا كنت في [مجموعة Bloxstrap في Roblox]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>القدرة على إخفاء واجهات المستخدم</value>
   </data>
@@ -1239,5 +1236,14 @@
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>معرف مجموعة إخفاء واجهات المستخدم</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>اكتشف المُثبِّت أنه قد يكون التثبيت فوق تثبيت Bloxstrap عادي. إذا كانت هذه هي الحالة، انقر فوق نعم للمتابعة.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>الإصدار الأساسي {0</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>تبديل مع [اختصارات لوحة المفاتيح] ({0}). يعمل فقط إذا كنت في المجموعة المحددة أدناه.</value>
   </data>
 </root>

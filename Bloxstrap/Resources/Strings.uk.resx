@@ -628,9 +628,6 @@
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Обмеження частоти кадрів</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Вмикається за допомогою [комбінацій клавіш]({0}). Працює лише якщо ви перебуваєте у [групі Bloxstrap]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Увімкнути можливість приховування інтерфейсу</value>
   </data>
@@ -1238,5 +1235,26 @@ Bloxstrap встановлено на "{1}".</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>Ідентифікатор групи приховування GUI</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Базова версія {0}</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Версія {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Інсталятор виявив, що ви, можливо, встановлюєте Bloxstrap поверх звичайної інсталяції Bloxstrap. Якщо це так, натисніть Так, щоб продовжити.</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Конфігурація Bloxstrap</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Всі журнали Bloxstrap</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Експорт</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Перемикається з [ярликами клавіатури]({0}). Працює лише в тому випадку, якщо ви в групі, зазначеній нижче.</value>
   </data>
 </root>

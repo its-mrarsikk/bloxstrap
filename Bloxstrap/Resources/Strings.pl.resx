@@ -631,9 +631,6 @@ Również NIE używaj tego do importowania dużych „list flag” utworzonych p
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Limit liczby klatek na sekundę</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Przełączane za pomocą [skrótów klawiaturowych]({0}). Działa tylko wtedy, gdy należysz do [grupy Bloxstrap]({1}) w Roblox.</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Włącz możliwość ukrywania GUI (interfejsu gry)</value>
   </data>
@@ -1240,5 +1237,23 @@ Czy chcesz włączyć tryb testowania?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID grupy ukrywania GUI</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Archiwum zip</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Eksport</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Instalator wykrył, że instalujesz na wierzchu normalnej instalacji Bloxstrap. W takim przypadku kliknij przycisk Yes (Tak), aby kontynuować.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Wersja podstawowa {0}</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Wersja {0}</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Przełączone z [skrótami klawiatury]({0}). Działa tylko wtedy, gdy jesteś w grupie określonej poniżej.</value>
   </data>
 </root>

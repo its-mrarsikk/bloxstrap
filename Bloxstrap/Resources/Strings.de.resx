@@ -631,9 +631,6 @@ Benutze dies NICHT, um "große Flag list" zu importieren, die von anderen Leuten
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Bildwiederholrate begrenzen</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Mit [Tastenkombinationen]({0}) umschaltbar. Funktioniert nur, wenn du Teil der [Bloxstrap Gruppe]({1}) bist.</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Aktiviere die Fähigkeit, GUIs zu verstecken</value>
   </data>
@@ -1241,5 +1238,20 @@ Möchtest du den Testmodus aktivieren?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>GUI-Versteck-Gruppen-ID</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Basisversion {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Der Installationsprogramm hat festgestellt, dass Sie möglicherweise auf einer normalen Bloxstrap -Installation installiert werden. Wenn dies der Fall ist, klicken Sie auf Ja, um fortzufahren.</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bloxstrap -Konfiguration</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>ZIP -Archiv</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Mit [Tastaturverknüpfungen] umgeschaltet({0}). Funktioniert nur, wenn Sie in der unten angegebenen Gruppe sind.</value>
   </data>
 </root>

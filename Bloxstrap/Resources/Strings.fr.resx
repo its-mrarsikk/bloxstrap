@@ -630,9 +630,6 @@ N'UTILISEZ PAS ceci pour importer de longues "flag lists" faites par d'autres pe
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Limite de FPS</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Activé en utilisant les [raccourcis clavier]({0}). Fonctionne uniquement si vous êtes dans le [groupe Bloxstrap]({1}).</value>
-  </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
     <value>Activer la possibilité de masquer les interfaces</value>
   </data>
@@ -1240,5 +1237,32 @@ Voulez-vous activer le mode test ?</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuisGroup.Title" xml:space="preserve">
     <value>ID du groupe de masquage de l'interface utilisateur</value>
+  </data>
+  <data name="Dialog.Exception.Version" xml:space="preserve">
+    <value>Version {0}</value>
+  </data>
+  <data name="InstallChecker.MayBeReplacingRegular" xml:space="preserve">
+    <value>Le programme d'installation a détecté que vous effectuez une installation en plus d'une installation normale de Bloxstrap. Si c'est le cas, cliquez sur OUI pour continuer.</value>
+  </data>
+  <data name="Menu.About.BaseVersion" xml:space="preserve">
+    <value>Version de base {0}</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Tous les journaux Bloxstrap</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Configuration de Bloxstrap</value>
+  </data>
+  <data name="Common.Export" xml:space="preserve">
+    <value>Exporter</value>
+  </data>
+  <data name="FileTypes.ZipArchive" xml:space="preserve">
+    <value>Archive zip</value>
+  </data>
+  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
+    <value>Exporter des données de diagnostic</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
+    <value>Basculé avec [raccourcis clavier]({0}). Ne fonctionne que si vous êtes dans le groupe spécifié ci-dessous.</value>
   </data>
 </root>
