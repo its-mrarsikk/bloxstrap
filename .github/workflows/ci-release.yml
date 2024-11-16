@@ -19,7 +19,7 @@ jobs:
 
     - name: Retrieve base version
       id: getver
-      run: echo "version=$(cat BASEVERSION)" >> $GITHUB_OUTPUT
+      run: echo "version=$(cat .\Bloxstrap\BASEVERSION)" >> $GITHUB_OUTPUT
 
     - name: Restore dependencies
       run: dotnet restore
