@@ -17,9 +17,12 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
+    - name: Output base version
+      run: cat .\Bloxstrap\BASEVERSION
+  
     - name: Retrieve base version
       id: getver
-      run: echo "version=$(cat .\Bloxstrap\BASEVERSION)" >> $GITHUB_OUTPUT
+      run: Write-Output "version=$(Get-Content .\Bloxstrap\BASEVERSION)" >> $env:GITHUB_OUTPUT
       
     - name: Restore dependencies
       run: dotnet restore
