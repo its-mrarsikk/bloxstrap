@@ -11,7 +11,7 @@ namespace Bloxstrap.UI.ViewModels.About
         public string BuildTimestamp => BuildMetadata.Timestamp.ToFriendlyString();
         public string BuildCommitHashUrl => $"https://github.com/{App.ProjectRepository}/commit/{BuildMetadata.CommitHash}";
 
-        public Visibility BuildInformationVisibility => App.IsReleaseBuild ? Visibility.Collapsed : Visibility.Visible;
+        public Visibility BuildInformationVisibility => Visibility.Visible;
         public Visibility BuildCommitVisibility => App.IsReleaseBuild ? Visibility.Visible : Visibility.Collapsed;
     }
 }
