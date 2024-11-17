@@ -17,9 +17,12 @@ jobs:
       with:
         dotnet-version: '6.0.x'
 
+    - name: Output base version
+      run: cat .\Bloxstrap\BASEVERSION
+  
     - name: Retrieve base version
       id: getver
-      run: echo "version=$(cat .\Bloxstrap\BASEVERSION)" >> $GITHUB_OUTPUT
+      run: echo "version=$(cat .\Bloxstrap\BASEVERSION)" >> $GITHUB_ENV
       
     - name: Restore dependencies
       run: dotnet restore
@@ -28,7 +31,7 @@ jobs:
       run: dotnet build --no-restore
 
     - name: Publish
-      run: dotnet publish -p:PublishSingleFile=true -p:CommitHash=${{ github.sha }} -p:CommitRef=${{ github.ref_type }}/${{ github.ref_name }} -p:BaseVersion=${{ steps.getver.outputs.version }} -p:IsReleaseBuild=true -r win-x64 -c Release --self-contained false .\Bloxstrap\Bloxstrap.csproj
+      run: dotnet publish -p:PublishSingleFile=true -p:CommitHash=${{ github.sha }} -p:CommitRef=${{ github.ref_type }}/${{ github.ref_name }} -p:BaseVersion=${{ env.version }} -p:IsReleaseBuild=true -r win-x64 -c Release --self-contained false .\Bloxstrap\Bloxstrap.csproj
 
     - name: Upload Artifact
       id: upload-artifact
